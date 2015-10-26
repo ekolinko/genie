@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsd.genie"
+    android:versionCode="2"
+    android:versionName="1.01" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/genie"
+        android:label="@string/app_name"
+        android:theme="@style/Genie" >
+        <activity
+            android:name="edu.ucsd.genie.userinterface.LoginActivity"
+            android:label="@string/genie">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.ucsd.genie.userinterface.TabActivity" />
+        <activity android:name="edu.ucsd.genie.userinterface.home.HomeFragment" />
+        <activity android:name="edu.ucsd.genie.userinterface.Preferences" />
+        <service
+            android:name=".GenieService"
+            android:label="@string/genie_service"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

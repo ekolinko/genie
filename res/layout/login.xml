@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/genie_yellow"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context=".LoginActivity" >
+
+    <!-- Header -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/genie_header"
+        android:gravity="center_vertical"
+        android:text="@string/genie"
+        android:textColor="@color/genie_green"
+        android:textSize="@dimen/login_header_text_size" />
+
+    <!-- Error Label -->
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:minWidth="@dimen/common_min_width"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <!-- Email Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/common_min_width"
+        android:text="@string/login_email"
+        android:textColor="@color/genie_green" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="5dip"
+        android:inputType="textEmailAddress"
+        android:minWidth="@dimen/common_min_width"
+        android:singleLine="true" />
+
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/common_min_width"
+        android:text="@string/login_password"
+        android:textColor="@color/genie_green" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:imeActionLabel="@string/login_action"
+        android:inputType="textPassword"
+        android:minWidth="@dimen/common_min_width"
+        android:singleLine="true" />
+
+    <!-- Login Button -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/common_min_width"
+            android:text="@string/login_action" />
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/login_button"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

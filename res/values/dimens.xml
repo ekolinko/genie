@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Common -->
+    <dimen name="common_min_width">500dp</dimen>
+
+    <!-- Home -->
+    <dimen name="more_details_min_width">500dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_header_text_size">42sp</dimen>
+    
+    <!-- Location -->    
+	<dimen name="geofence_x">32.881864px</dimen>
+	<dimen name="geofence_y">-117.233775px</dimen>
+	<!-- Every 0.00001 points corresponds to roughly one meter -->
+	<dimen name="geofence_radius">0.001px</dimen> <!-- 100 meters -->
+	<dimen name="geofence_gps_radius">0.05px</dimen> <!-- 5000 meters -->
+	
+    <!-- MeterView -->
+    <dimen name="meter_view_arc_stroke_width">8dp</dimen>
+    <dimen name="meter_view_needle_stroke_width">3dp</dimen>
+    <dimen name="meter_view_needle_base_radius">6dp</dimen>
+
+    <!-- Units -->
+	<dimen name="units_kilowatts_min">0px</dimen>    
+    <dimen name="units_kilowatts_max">20px</dimen>
+    <dimen name="units_fahrenheit_min">60px</dimen>
+    <dimen name="units_fahrenheit_max">90px</dimen>
+    <dimen name="units_default_max">100px</dimen>
+    <dimen name="units_default_min">0px</dimen>
+    <dimen name="units_fahrenheit_range">3px</dimen>
+    <dimen name="units_default_common_setpoint">72px</dimen>
+
+</resources>

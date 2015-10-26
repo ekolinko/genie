@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/genie_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_detail_information" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_warm_cool_adjust"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_warm_cool_adjust" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_actual_cooling_setpoint"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_cooling_setpoint" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_actual_heating_setpoint"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_heating_setpoint" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_damper_position"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_damper_position" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_supply_flow"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_supply_flow" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_reheat_valve_command"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_reheat_valve_command" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_common_setpoint"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_common_setpoint" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_damper_command"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_damper_command" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_supply_flow_setpoint"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_supply_flow_setpoint" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_cooling_max_flow"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_cooling_max_flow" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_occupied_cooling_min_flow"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_occupied_cooling_min_flow" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_occupied_heating_flow"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_occupied_heating_flow" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_cooling_command"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_cooling_command" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_heating_command"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_heating_command" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_fan_command"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_fan_command" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_cooling_power"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_cooling_power" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_electrical_power"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_electrical_power" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+
+        <edu.ucsd.genie.userinterface.advanced.SimplePanel
+            android:id="@+id/panel_heating_power"
+            style="@style/genie_panel_simple" >
+
+            <TextView
+                style="@style/genie_panel_title_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_heating_power" />
+
+            <include layout="@layout/view_simple" />
+        </edu.ucsd.genie.userinterface.advanced.SimplePanel>
+    </LinearLayout>
+
+</LinearLayout>

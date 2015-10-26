@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.ucsd.genie.userinterface.home.TemperaturePanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_hvac_temperature"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/genie_panel_title_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_hvac_temperature" />
+
+    <RelativeLayout
+        android:id="@+id/temperature_view"
+        style="@style/genie_view_temperature" >
+
+        <TextView
+            style="@style/genie_panel_temperature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temperature_seekbar"
+            android:layout_alignParentLeft="true"
+            android:text="@string/panel_hvac_temperature_cold"
+            android:textColor="@color/blue" />
+
+        <TextView
+            style="@style/genie_panel_temperature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temperature_seekbar"
+            android:layout_alignParentRight="true"
+            android:text="@string/panel_hvac_temperature_hot"
+            android:textColor="@color/red" />
+
+        <SeekBar
+            android:id="@+id/temperature_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/field_value"
+        style="@style/genie_panel_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:textColor="@color/blue" />
+
+    <LinearLayout
+        style="@style/genie_panel_updated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <TextView
+            style="@style/genie_panel_updated_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_updated_label" /> !-->
+
+        <TextView
+            android:id="@+id/field_updated"
+            style="@style/genie_panel_updated_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data" />
+    </LinearLayout>
+
+</edu.ucsd.genie.userinterface.home.TemperaturePanel>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_change_password"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/genie_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_update_rooms" />
+    
+    <!-- Error Label -->
+    <TextView
+        android:id="@+id/settings_update_rooms_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:minWidth="@dimen/common_min_width"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <!-- Add Room -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/settings_add_room_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/common_min_width"
+                android:text="@string/panel_update_rooms_add_action" />
+
+            <ProgressBar
+                android:id="@+id/settings_add_room_progress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/settings_add_room_button"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- Remove Room -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/settings_remove_room_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/common_min_width"
+                android:text="@string/panel_update_rooms_remove_action" />
+
+            <ProgressBar
+                android:id="@+id/settings_remove_room_progress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/settings_remove_room_button"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

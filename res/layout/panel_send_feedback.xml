@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_change_password"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/genie_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_send_feedback" />
+
+    <!-- Error Label -->
+
+    <TextView
+        android:id="@+id/feedback_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:minWidth="@dimen/common_min_width"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/feedback_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/panel_send_feedback" />
+
+    <!-- Comment Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/common_min_width"
+        android:text="@string/comments"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/common_min_width"
+        android:layout_marginBottom="10dip"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+
+    <!-- Send Feedback Button -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip" >
+
+        <Button
+            android:id="@+id/feedback_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/common_min_width"
+            android:text="@string/panel_send_feedback_action" />
+
+        <ProgressBar
+            android:id="@+id/feedback_send_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/feedback_send_button"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--
+    <RadioGroup
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+		android:gravity="center"    	
+    	android:id="@+id/feedback_radio_value">
+    	<RadioButton
+	        android:id="@+id/feedback_value_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_cold"
+	        android:background="@color/cold" />
+    	<RadioButton
+	        android:id="@+id/feedback_value_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_cool"
+	        android:background="@color/cool" />
+    	<RadioButton
+	        android:id="@+id/feedback_value_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_slightly_cool"
+	        android:background="@color/slightly_cool" />
+    	<RadioButton
+	        android:id="@+id/feedback_value_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_neutral"
+	        android:textColor="@color/black"
+	        android:background="@color/neutral"/>
+    	<RadioButton
+	        android:id="@+id/feedback_value_5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_slightly_warm"
+	        android:background="@color/slightly_warm" />
+    	<RadioButton
+	        android:id="@+id/feedback_value_6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_warm"
+	        android:background="@color/warm" />
+    	<RadioButton
+	        android:id="@+id/feedback_value_7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="@style/genie_panel_send_feedback_value"
+	        android:text="@string/panel_send_feedback_hot"
+	        android:background="@color/hot" />
+    </RadioGroup>
+    -->
+
+</LinearLayout>

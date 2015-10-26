@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.ucsd.genie.userinterface.home.MeterPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_energy_usage"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/genie_panel_title_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_energy_usage" />
+
+    <edu.ucsd.genie.userinterface.home.MeterView
+        android:id="@+id/meter_view"
+        style="@style/genie_view_meter" />
+
+    <TextView
+        android:id="@+id/field_value"
+        style="@style/genie_panel_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data" />
+
+    <LinearLayout
+        style="@style/genie_panel_updated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <TextView
+            style="@style/genie_panel_updated_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_updated_label" /> !-->
+
+        <TextView
+            android:id="@+id/field_updated"
+            style="@style/genie_panel_updated_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/genie_panel_cse_avg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/genie_panel_cse_avg_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panel_cse_avg_label" />
+
+        <TextView
+            android:id="@+id/field_cse_avg"
+            style="@style/genie_panel_cse_avg_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data" />
+    </LinearLayout>
+
+</edu.ucsd.genie.userinterface.home.MeterPanel>

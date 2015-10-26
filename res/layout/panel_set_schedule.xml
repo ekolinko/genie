@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_set_schedule"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <!-- Set HVAC Schedule -->
+    <TextView
+        style="@style/genie_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_set_schedule" />
+    
+    <!-- Error Label -->
+    <TextView
+        android:id="@+id/settings_set_schedule_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:minWidth="@dimen/common_min_width"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+    
+    <!-- Schedule Status -->
+     <TextView
+        android:id="@+id/settings_set_schedule_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:textColor="@color/black"
+        android:minWidth="@dimen/common_min_width"/>
+    
+    <!-- Set Schedule Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/settings_set_schedule_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/common_min_width"
+            android:text="@string/panel_set_schedule_button" />
+        <ProgressBar
+            android:id="@+id/settings_set_schedule_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/settings_set_schedule_button"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">Genie</string>
+    <string name="genie">Genie</string>
+    <string name="genie_service">Genie Service</string>
+    <string name="building">EBU3B</string>
+    <string name="building_access_point">Hydra</string>
+    <string name="about">About</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="comments">Comments</string>
+    <string name="empty"></string>
+    <string name="no_data">--</string>
+
+    <!-- Home -->
+    <string name="home_select_room">Select a room:</string>
+    <string name="home_room_format" formatted="false">%s - %s</string>
+
+    <!-- HTTP -->
+    <string name="http_accept">Accept</string>
+    <string name="http_content_type">Content-type</string>
+    <string name="http_application_json">"application/json"</string>
+    <string name="http_api_key">X-BD-Api-Key</string>
+    <string name="http_authentication_token">X-BD-Auth-Token</string>
+
+    <!-- JSON keys -->
+    <string name="json_username">username</string>
+    <string name="json_request">request</string>
+    <string name="json_request_password">password</string>
+    <string name="json_request_rooms">rooms</string>
+    <string name="json_password">password</string>
+    <string name="json_oldpassword">oldpassword</string>
+    <string name="json_bdaccess">bdaccess</string>
+    <string name="json_auth_token">auth_token</string>
+    <string name="json_api_key">api_key</string>
+
+    <!-- JSON user keys -->
+    <string name="json_user">user</string>
+    <string name="json_building">building</string>
+    <string name="json_email">email</string>
+    <string name="json_first_name">first_name</string>
+    <string name="json_middle_name">middle_name</string>
+    <string name="json_last_name">last_name</string>
+    <string name="json_rooms">rooms</string>
+
+    <!-- JSON latest sensor data keys -->
+    <string name="json_room">room</string>
+    <string name="json_timestamp">timestamp</string>
+    <string name="json_is_weekday">isWeekday</string>
+    <string name="json_is_worktime">isWorkday</string>
+    <string name="json_is_control_enabled">isControlEnable</string>
+    <string name="json_sensor_data">sensorData</string>
+
+    <!-- JSON sensor data keys -->
+    <string name="json_type">type</string>
+    <string name="json_unit">unit</string>
+    <string name="json_value">value</string>
+    <string name="json_time">time</string>
+
+    <!-- JSON feedback keys -->
+    <string name="json_feeling">feeling</string>
+    <string name="json_comment">comment</string>
+    <string name="json_report">report</string>
+
+    <!-- JSON HVAC keys -->
+    <string name="json_command">command</string>
+    <string name="hvac_command_actuate">Actuate</string>
+    <string name="hvac_command_temperature">Temperature</string>
+    <string name="json_duration">duration</string>
+    <string name="json_start">start</string>
+    <string name="json_end">end</string>
+    <string name="json_zone">zone</string>
+    <string name="json_default_common_setpoint">default_common_setpoint</string>
+    <string name="json_area">area</string>
+
+    <!-- Login -->
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_action">Login</string>
+    <string name="logging_in">Logging In</string>
+    <string name="login_error_authentication_failure">The username or password you entered is incorrect.</string>
+    <string name="logout">Logout</string>
+    
+    <!-- Menu -->
+    <string name="menu_preferences">Preferences</string>
+
+    <!-- Notifications -->
+    <string name="hvac_notification_off">The HVAC has been turned off.</string>
+    <string name="hvac_notification_on">The HVAC has been turned on.</string>
+    <string name="hvac_notification_standby">The HVAC has been put on standby.</string>
+	<string name="hvac_notification_unknown">The HVAC has been put in an unknown state.</string>
+    
+    <!-- Panel -->
+    <string name="panel_updated_label">Updated:</string>
+    <string name="panel_cse_avg_label">CSE Avg:</string>
+
+    <!-- Panel: Environment Information -->
+    <string name="panel_environment_information">Environment Information</string>
+    <string name="panel_energy_usage">Energy Usage</string>
+    <string name="panel_room_temperature">Room Temperature</string>
+
+    <!-- Panel: HVAC Control -->
+    <string name="panel_hvac_control">HVAC Control</string>
+    <string name="panel_hvac_status">Status</string>
+    <string name="panel_hvac_temperature">Temperature</string>
+    <string name="panel_hvac_status_description">The online/offline status of the HVAC.</string>
+    <string name="panel_hvac_temperature_cold">C</string>
+    <string name="panel_hvac_temperature_hot">H</string>
+    <string name="panel_hvac_status_on">ON</string>
+    <string name="panel_hvac_status_off">OFF</string>
+    <string name="panel_hvac_status_standby">Standby</string>
+    <string name="panel_hvac_status_unknown">Unknown</string>
+    <string name="panel_hvac_send_temperature_message_success">The temperature setpoint is changed to %s. Please wait for at least 10 mins before changing the setpoint again.</string>
+    <string name="panel_hvac_send_temperature_message_failure">The temperature setpoint cannot be changed at this time. Please try again later.</string>
+    <string name="panel_hvac_send_command_message_success">HVAC Zone changed to \'%s\'. Please wait for at least 10 mins before sending another command.</string>
+    <string name="panel_hvac_send_command_message_failure">The HVAC zone cannot be changed at this time. Please try again later.</string>
+    <string name="panel_hvac_sharing_reminder">You are sharing this HVAC with room %s occupants. Please be considerate of their preferences.</string>
+
+    <!-- Panel: Detail Information -->
+    <string name="panel_detail_information">Detail Information</string>
+
+    <!-- Panel: Update Password -->
+    <string name="panel_update_password">Update Password</string>
+    <string name="panel_update_password_action">Update</string>
+    <string name="panel_update_password_updating">Updating Password</string>
+    <string name="panel_update_password_error_invalid_length">Password must be between 8 and 16 characters long.</string>
+    <string name="panel_update_password_error_mismatch">Passwords must match.</string>
+    <string name="panel_update_password_old_password_required">The old password is required.</string>
+    <string name="panel_update_old_password_error_invalid_length">The old password must be between 8 and 16 characters in length.</string>
+    <string name="panel_update_old_password_error_invalid">The old password was invalid.</string>
+    <string name="panel_update_password_success">The password was successfully updated.</string>
+
+    <!-- Panel: Update Rooms -->
+    <string name="panel_update_rooms">Update Rooms</string>
+    <string name="panel_update_rooms_add_rooms">Add Rooms</string>
+    <string name="panel_update_rooms_remove_rooms">Remove Rooms</string>
+    <string name="panel_update_rooms_add_action">Add Room</string>
+    <string name="panel_update_rooms_remove_action">Remove Room</string>
+    <string name="panel_update_rooms_adding_room">Adding Room</string>
+    <string name="panel_update_rooms_removing_room">Removing Room</string>
+    <string name="panel_update_rooms_add_room_success">Room %s was successfully added.</string>
+    <string name="panel_update_rooms_remove_room_success">Room %s was successfully removed.</string>
+    <string name="panel_update_rooms_no_rooms_available_to_add">No rooms available to add.</string>
+    <string name="panel_update_rooms_no_rooms_available_to_remove">No rooms available to remove.</string>
+
+    <!-- Panel: Set Schedule -->
+    <string name="panel_set_schedule">Set Schedule</string>
+    <string name="panel_set_schedule_status" formatted="false">Weekday Schedule : %s - %s</string>
+    <string name="panel_set_schedule_button">Set Schedule</string>
+    <string name="panel_set_schedule_button_setting">Setting Schedule</string>
+    <string name="panel_set_schedule_success">The HVAC schedule has been successfully changed.</string>
+    <string name="dialog_set_schedule_title">Set weekday HVAC control schedule for room %s</string>
+    <string name="dialog_set_schedule_current_schedule" formatted="false">Current schedule of your HVAC is %s to %s.</string>
+    <string name="dialog_set_schedule_reminder">You are sharing this HVAC with room %s occupants. Control schedule will be the maximum duration of these rooms\' schedules.</string>
+    <string name="dialog_set_schedule_start">start</string>
+    <string name="dialog_set_schedule_end">end</string>
+    <string name="dialog_set_schedule_weekday">(Weekday)</string>
+    <string name="dialog_set_schedule_start_prompt">HVAC Start Time</string>
+    <string name="dialog_set_schedule_end_prompt">HVAC End Time</string>
+
+    <string-array name="dialog_set_schedule_time_values">
+        <item>6:00am</item>
+        <item>6:30am</item>
+        <item>7:00am</item>
+        <item>7:30am</item>
+        <item>8:00am</item>
+        <item>8:30am</item>
+        <item>9:00am</item>
+        <item>9:30am</item>
+        <item>10:00am</item>
+        <item>10:30am</item>
+        <item>11:00am</item>
+        <item>11:30am</item>
+        <item>12:00pm</item>
+        <item>12:30pm</item>
+        <item>1:00pm</item>
+        <item>1:30pm</item>
+        <item>2:00pm</item>
+        <item>2:30pm</item>
+        <item>3:00pm</item>
+        <item>3:30pm</item>
+        <item>4:00pm</item>
+        <item>4:30pm</item>
+        <item>5:00pm</item>
+        <item>5:30pm</item>
+        <item>6:00pm</item>
+        <item>6:30pm</item>
+        <item>7:00pm</item>
+        <item>7:30pm</item>
+        <item>8:00pm</item>
+        <item>8:30pm</item>
+        <item>9:00pm</item>
+        <item>9:30pm</item>
+        <item>10:00pm</item>
+    </string-array>
+
+    <!-- Panel: Send Feedback -->
+    <string name="panel_send_feedback">How are you feeling now?</string>
+    <string name="panel_send_feedback_action">Send Feedback</string>
+    <string name="panel_send_feedback_updating">Sending Feedback</string>
+    <string name="panel_send_feedback_success">Thanks for your feedback!</string>
+    <string name="panel_send_feedback_cold">Cold</string>
+    <string name="panel_send_feedback_cool">Cool</string>
+    <string name="panel_send_feedback_slightly_cool">Slightly Cool</string>
+    <string name="panel_send_feedback_neutral">Neutral</string>
+    <string name="panel_send_feedback_slightly_warm">Slightly Warm</string>
+    <string name="panel_send_feedback_warm">Warm</string>
+    <string name="panel_send_feedback_hot">Hot</string>
+
+    <string-array name="panel_send_feedback_values">
+        <item>@string/panel_send_feedback_cold</item>
+        <item>@string/panel_send_feedback_cool</item>
+        <item>@string/panel_send_feedback_slightly_cool</item>
+        <item>@string/panel_send_feedback_neutral</item>
+        <item>@string/panel_send_feedback_slightly_warm</item>
+        <item>@string/panel_send_feedback_warm</item>
+        <item>@string/panel_send_feedback_hot</item>
+    </string-array>
+
+    <!-- Panel: Contact Facility Manager -->
+    <string name="panel_contact_facility_manager">Is there something wrong with your room?</string>
+    <string name="panel_contact_facility_manager_action">Contact Facility Manager</string>
+    <string name="dialog_set_schedule_current_schedule_prompt">Something wrong? Please let me know!</string>
+    <string name="dialog_contact_facility_manager_title">Report problems in your room</string>
+    <string name="panel_contact_facility_manager_sending">Sending</string>
+    <string name="panel_contact_facility_manager_success">Thanks for your feedback!</string>
+
+    <!-- Panel: About -->
+    <string name="panel_about">About this project</string>
+    <string name="panel_about_main_text">Genie is a project of the MESL/Synergy Lab at UCSD. Genie assists occupants of the Computer Science and Engineering building to improve their environment. You can use it to change your temperature settings, set your schedule and turn HVAC on/off when you need. You can also view history of sensor measurements, and send us your feedback using this interface. The goal of this project is to make HVAC energy efficient while meeting the comfort requirements of the occupant. Please use Genie, feel free to send us your suggestions, feedback or maintenance requests, and improve your environment!</string>
+	<string name="panel_about_synergy">Synergy</string>
+	<string name="panel_about_mesl">MESL</string>
+	<string name="panel_about_cse">CSE</string>
+	<string name="panel_about_ucsd">UCSD</string>
+    
+	<!-- Preferences: Username -->	
+	<string name="preferences_username">username</string>
+	<string name="preferences_category_key">category_settings</string>
+	<string name="preferences_category_title">Preferences</string>
+	<string name="preferences_key_enable_background_services">enable_background_services</string>
+	<string name="preferences_enable_background_services_title">Enable Background Services</string>
+	<string name="preferences_enable_background_services_summary">Allow Genie to use the GPS and network while it\'s in the background.</string>
+	<string name="preferences_key_enable_notifications">enable_notifications</string>
+	<string name="preferences_enable_notifications_title">Enable Notifications</string>
+	<string name="preferences_enable_notifications_summary">Allow Genie to show notifications regarding HVAC status.</string>
+	
+    <!-- Sensor -->
+    <string name="sensor_energy_usage">HVAC Zone Power-total_zone_power</string>
+    <string name="sensor_zone_temperature">Zone Temperature</string>
+    <string name="sensor_hvac_status">Occupied Command</string>
+    <string name="sensor_supply_velocity_pressure">Supply Vel Press</string>
+    <string name="sensor_warm_cool_adjust">Warm/Cool Adjust</string>
+    <string name="sensor_common_setpoint">Common Setpoint</string>
+    <string name="sensor_cooling_setpoint">Actual Cooling Setpoint</string>
+    <string name="sensor_heating_setpoint">Actual Heating Setpoint</string>
+    <string name="sensor_damper_command">Damper Command</string>
+    <string name="sensor_damper_position">Damper Position</string>
+    <string name="sensor_supply_flow">Actual Supply Flow</string>
+    <string name="sensor_supply_flow_setpoint">Actual Sup Flow SP</string>
+    <string name="sensor_cooling_max_flow">Cooling Max Flow</string>
+    <string name="sensor_occupied_cooling_min_flow">Occupied Clg Min</string>
+    <string name="sensor_occupied_heating_flow">Occupied Htg Flow</string>
+    <string name="sensor_reheat_valve_command">Reheat Valve Command</string>
+    <string name="sensor_cooling_command">Cooling Command</string>
+    <string name="sensor_heating_command">Heating Command</string>
+    <string name="sensor_fan_command">Fan Command</string>
+    <string name="sensor_cooling_power">Cooling Power</string>
+    <string name="sensor_electrical_power">Electrical Power</string>
+    <string name="sensor_heating_power">Heating Power</string>
+    <string name="sensor_temp_occ_sts">Temp Occ Sts</string>
+    <string name="sensor_average_energy_usage">average_zone_power</string>
+    <string name="sensor_average_zone_temperature">average_zone_temperature</string>
+    <string name="sensor_cooling_power_raw">HVAC Zone Power-cooling_thermal_power</string>
+    <string name="sensor_electrical_power_raw">HVAC Zone Power-electrical_power</string>
+    <string name="sensor_heating_power_raw">HVAC Zone Power-heating_thermal_power</string>
+    <string name="sensor_schedule_weekday">HVAC Zone Control Schedule Weekday</string>
+
+    <!-- Settings -->
+    <string name="settings_new_password">New Password</string>
+    <string name="settings_new_password_hint">This field must be between 8 and 16 characters long.</string>
+    <string name="settings_repeat_password">Repeat New Password</string>
+    <string name="settings_old_password">Old Password</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_feedback">Feedback</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_advanced">Advanced</string>
+    <string name="tab_about">About</string>
+
+    <!-- Units -->
+    <string name="units_kilowatts">kW</string>
+    <string name="units_fahrenheit">&#176;F</string>
+
+    <!-- Urls -->
+    <string name="url_genie">https://genie.ucsd.edu</string>
+    <string name="url_genie_release">http://bdapps.ucsd.edu</string>
+    <string name="url_genie_test">http://bdapps.ucsd.edu:23483</string>
+    <string name="url_login">/genie/api/sessions</string>
+    <string name="url_get_user_information">/genie/api/users/%s</string>
+    <string name="url_get_latest_data" formatted="false">/genie/api/sensors/%s/%s</string>
+    <string name="url_logout">/genie/api/session/%s</string>
+    <string name="url_update_user">/genie/api/user/%s</string>
+    <string name="url_get_rooms">/genie/api/rooms/%s</string>
+    <string name="url_send_feedback">/genie/api/feedback</string>
+    <string name="url_send_report">/genie/api/report</string>
+    <string name="url_send_hvac_control_command">/genie/api/control</string>
+    <string name="url_send_hvac_control_schedule">/genie/api/schedule/%s</string>
+    <string name="url_get_room_information" formatted="false">/genie/api/room/%s/%s</string>
+
+</resources>

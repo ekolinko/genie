@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <!-- Contact Facility Manager Prompt -->
+    <TextView android:id="@+id/dialog_contact_facility_manager_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="@string/dialog_set_schedule_current_schedule_prompt"
+        android:textColor="@color/black" />
+    
+    <!-- Comment Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/common_min_width"
+        android:text="@string/comments"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/dialog_contact_facility_manager_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+    
+</LinearLayout>

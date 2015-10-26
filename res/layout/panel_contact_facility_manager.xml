@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_contact_facility_manager"
+    style="@style/genie_panel_meter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/genie_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_contact_facility_manager" />
+
+    <!-- Error Label -->
+    <TextView
+        android:id="@+id/feedback_contact_facility_manager_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:minWidth="@dimen/common_min_width"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <!-- Contact Facility Manager Button -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip" >
+
+        <Button
+            android:id="@+id/feedback_contact_facility_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/common_min_width"
+            android:text="@string/panel_contact_facility_manager_action" />
+
+        <ProgressBar
+            android:id="@+id/feedback_contact_facility_manager_progress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/feedback_contact_facility_manager"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

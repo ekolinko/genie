@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="@string/preferences_category_title"
+        android:key="@string/preferences_category_key">
+		<CheckBoxPreference
+		    android:key="@string/preferences_key_enable_background_services"
+		    android:title="@string/preferences_enable_background_services_title"
+		    android:summary="@string/preferences_enable_background_services_summary"
+		    android:defaultValue="@bool/preferences_enable_background_services" />
+		 <CheckBoxPreference
+		    android:key="@string/preferences_key_enable_notifications"
+		    android:title="@string/preferences_enable_notifications_title"
+		    android:summary="@string/preferences_enable_notifications_summary"
+		    android:defaultValue="@bool/preferences_enable_notifications" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- Preferences -->
+   <bool name="preferences_enable_background_services">false</bool>
+   <bool name="preferences_enable_notifications">true</bool>
+
+</resources>

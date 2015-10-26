@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/dialog_set_schedule_current_schedule_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="@string/dialog_set_schedule_current_schedule"
+        android:textColor="@color/black" />
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dip">
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dialog_set_schedule_start"
+	        android:textColor="@color/black" />
+        <Spinner
+	        android:id="@+id/dialog_set_schedule_start_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/dialog_set_schedule_time_values"
+	        android:prompt="@string/dialog_set_schedule_start_prompt" />
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dialog_set_schedule_end"
+	        android:textColor="@color/black" />
+        <Spinner
+	        android:id="@+id/dialog_set_schedule_end_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/dialog_set_schedule_time_values"
+	        android:prompt="@string/dialog_set_schedule_end_prompt" />
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dialog_set_schedule_weekday"
+	        android:textColor="@color/black" />
+    </LinearLayout>
+    
+    <TextView android:id="@+id/dialog_set_schedule_reminder_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+    
+</LinearLayout>

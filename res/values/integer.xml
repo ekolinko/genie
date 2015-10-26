@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HTTP -->
+    <integer name="http_status_success">200</integer>
+    <integer name="http_status_authentication_failure">401</integer>
+
+    <!-- Home Activity -->
+    <integer name="home_ui_update_interval">600000</integer>
+    
+    <!-- GPS !-->
+    <integer name="gps_refresh_interval">600000</integer>
+    
+    <!-- WiFi Scanner -->
+    <integer name="wifi_scanner_update_interval">600000</integer>
+
+    <!-- HVAC -->
+    <integer name="hvac_status_off">1</integer>
+    <integer name="hvac_status_standby">2</integer>
+    <integer name="hvac_status_on">3</integer>
+    <integer name="hvac_temperature_seekbar_max">12</integer>
+    <integer name="hvac_temperature_seekbar_step">2</integer>
+    <integer name="hvac_temperature_default_duration">12</integer>
+
+    <!-- Send Feedback -->
+    <integer name="send_feedback_offset">3</integer>
+
+    <!-- Settings -->
+    <integer name="settings_min_password_length">8</integer>
+    <integer name="settings_max_password_length">16</integer>
+	<integer name="settings_default_end_time_position">24</integer>
+    
+</resources>
